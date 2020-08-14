@@ -600,6 +600,10 @@
 		text-align: left;
 	}
 
+	.inner-coulmn{
+		text-align: left;
+	}
+
 	.homepage #main .major {
 		text-align: center;
 	}
@@ -629,7 +633,7 @@
 		}
 
 /* Footer */
-
+		
 	#footer {
 		padding: 4em 0;
 		color: #fff;
