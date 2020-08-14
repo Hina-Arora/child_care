@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<!--
+	Horizons by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Contact Us</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="right-sidebar">
+
+		<!-- Header -->
+			<div id="header">
+				<div class="container">
+						
+					<!-- Logo -->
+						<h1><a href="#" id="logo">SeaMa Care</a></h1>
+					
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="">Services</a>
+									<ul>
+										<li><a href="#">Infant and child basic care</a></li>
+										<li><a href="#">Prepare meals and feed</a></li>
+										<li><a href="#">Hygiene and Cleanliness</a></li>
+										<li><a href="#">Orgainize activities</a></li>
+										<li><a href="#">Educate Good and Bad touch</a></li>
+										<li><a href="#">Choking and CPR/Medical Aid</a></li>
+									</ul>
+								</li>
+								<li><a href="insight.html">Insight</a></li>
+								<li><a href="contact-us.html">Contact Us</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+							</ul>
+						</nav>
+
+
+					<!-- Banner -->
+						<div id="banner">
+							<div class="container">
+								<section>
+									<header class="major">
+										<h2>Welcome to Child Care!</h2>
+									</header>
+									<a href="contact-us.html" style="margin: 50px" class="button alt">Click for Enquiry</a>
+								</section>			
+							</div>
+						</div>
+
+				</div>
+			</div>
+
+		<!-- Main -->
+			<div id="main" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+					
+						<!-- Content -->
+						<div id="content" class="6u skel-cell-important">
+							<section>
+								<header class="major">
+									<h2>Get in touch</h2>
+									
+								</header>
+								<ul class="contact">
+										<li>
+											<span class="address">Address</span>
+											<span>1/1, Punjabi Quater, Meerapur <br />Allahabad 211003</span>
+										</li>
+										<li>
+											<span class="mail">Mail</span>
+											<span><a href="#">info@seamacare.com</a></span>
+										</li>
+										<li>
+											<span class="phone">Phone</span>
+											<span>(+91) 7838261344</span>
+										</li>
+									</ul>
+							</section>
+						</div>
+
+				<div id="sidebar" class="5u sidebar">
+					<form class="form-detail" name='submit-to-google-sheet' method="post" enctype="text/plain" id="myform">
+						<h2>Enquiry Form</h2>
+						<div class="form-row">
+							<label for="full-name">Full Name:</label>
+							<input type="text" name="full_name" id="full_name" class="input-text" placeholder="ex: Lindsey Wilson">
+						</div>
+						<div class="form-row">
+							<label for="your_email">Your Email:</label>
+							<input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="ex: info@seamacare.com">
+						</div>
+						<div class="form-row">
+							<label for="mobile">Mobile:</label>
+							<input type="text" name="mobile" id="mobile" class="input-text" placeholder="ex: 8899889988" required>
+						</div>
+						
+						<!--<div class="form-checkbox">
+						<span class="checkmark"></span>
+							<label class="container"><p>By signing up, you agree to the <a href="#" class="text">Play Term of Service</a></p>
+								<input type="checkbox" name="agree" id="agree">
+								
+							</label>
+						</div> -->
+						
+						<div class="form-row-last">
+							<!--<a href="#" type="submit"class="button alt">Register</a>-->
+							<button href="#" style="margin: 50px" class="button alt" type="submit">Register</button>
+
+						</div>
+					</form>
+
+			<script>
+				const scriptURL = 'https://script.google.com/macros/s/AKfycbyGefTBBZTuhio6NtLLwidZAKdLxhr9IBbuXxd3ryZG8BeAfIQP/exec'
+				const form = document.forms['submit-to-google-sheet']
+
+
+				form.addEventListener('submit', e => {
+					e.preventDefault()
+					fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+					.then(response => console.log('Success!', response))
+					.catch(error => console.error('Error!', error.message))
+				})
+			</script>
+				</div>
+				
+						
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+				<div id="footer">
+				<div class="container">
+
+					<!-- Lists -->
+						<div class="row">
+							<div class="8u">
+								<section>
+									<header class="major">
+										<h2>SeaMa Care</h2>
+										<span class="byline">Our mission is to provide first-class child care for the local community <br />in a safe, comfortable, and welcoming environment.</span>
+									</header>
+									<div class="row">
+										<section class="6u">
+											<ul class="default">
+												<li><a href="index.html">Home</a></li>
+												<li><a href="index.html">Services</a></li>
+												<li><a href="insight.html">Insight</a></li>
+												<li><a href="contact-us.html">Contact Us</a></li>
+												<li><a href="about-us.html">About Us</a></li>
+											</ul>
+										</section>
+					
+									</div>
+								</section>
+							</div>
+							<div class="4u">
+								<section>
+									<header class="major">
+										<h2>Contact Us</h2>
+									</header>
+									<ul class="contact">
+										<li>
+											<span class="address">Address</span>
+											<span>1/1, Punjabi Quater, Meerapur <br />Allahabad 211003</span>
+										</li>
+										<li>
+											<span class="mail">Mail</span>
+											<span><a href="#">info@seamacare.com</a></span>
+										</li>
+										<li>
+											<span class="phone">Phone</span>
+											<span>(+91) 7838261344</span>
+										</li>
+									</ul>	
+								</section>
+							</div>
+						</div>
+
+				</div>
+			</div>
+
+	</body>
+</html>
