@@ -121,9 +121,9 @@
 							</label>
 						</div> -->
 						
-						<div class="form-row-last">
+						<div class="form-row-last" style="margin-top: 30px">
 							<!--<a href="#" type="submit"class="button alt">Register</a>-->
-							<button href="#" style="margin: 50px" class="button alt" type="submit">Register</button>
+							<button id="submit-botton" href="#"  class="button alt" type="submit">Submit</button>
 
 						</div>
 					</form>
@@ -136,9 +136,10 @@
 				form.addEventListener('submit', e => {
 					e.preventDefault()
 					fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-					.then(response => console.log('Success!', response))
-					.catch(error => console.error('Error!', error.message))
+					.then(response => alert('We have recieved your information, out team will call you shortly', response))
+					.catch(error => console.error('Error! Sorry there is some error occured. You can call us on the given number', error.message))
 				})
+			
 			</script>
 				</div>
 				
